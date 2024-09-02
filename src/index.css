@@ -8,6 +8,8 @@
   box-sizing: border-box;
   --sky-color: rgb(88, 138, 212);
 }
-.c{
-  background-color: var(--sky-color);
+.flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }

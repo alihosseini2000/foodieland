@@ -1,11 +1,14 @@
-
+import Footer from "./layout/footer";
+import Header from "./layout/header";
+import Navbar from "./layout/navbar";
 
 function App() {
   return (
-    <div>
-        <h1 className='text-red-700 text-3xl c'>hello</h1>
-
-    </div>
+    <>
+        <Navbar />
+        <Header />
+        <Footer />
+    </>
   );
 }
 
