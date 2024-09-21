@@ -6,10 +6,43 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  --sky-color: rgb(88, 138, 212);
 }
-.flex{
-  display: flex;
-  justify-content: space-between;
-  padding: 5px;
+@font-face {
+  font-family: "George";
+  src: url("../public/assets/Louis\ George\ Cafe.ttf");
+}
+.font-george{
+  font-family: George;
+}
+body{
+  overflow-x: hidden;
+}
+.slider-container {
+  width: 100%; /* کل عرض صفحه */
+  margin: 0 auto; /* قرار گرفتن اسلایدر در مرکز */
+}
+
+.slick-slide {
+  transition: all 0.05s ease; /* ایجاد افکت برای اسلاید */
+}
+
+.slick-slide img {
+  width: 90%; /* اسلاید اصلی 90 درصد عرض صفحه را می‌گیرد */
+  margin: 0 auto;
+}
+
+.slick-center img {
+  transform: scale(1.05); /* بزرگتر کردن اسلاید مرکزی */
+}
+
+.slick-prev, .slick-next {
+  z-index: 1; /* دکمه‌های ناوبری در بالای اسلایدر قرار گیرند */
+} 
+
+
+.m-0{
+  margin: 0px !important;
+}
+.w-full{
+  width: 100% !important;
 }
