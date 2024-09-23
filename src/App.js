@@ -1,3 +1,4 @@
+import Recipes from "./components/recipes/Recipes";
 import Footer from "./layout/footer";
 import Header from "./layout/header";
 import Navbar from "./layout/navbar";
@@ -5,9 +6,12 @@ import Navbar from "./layout/navbar";
 function App() {
   return (
     <>
-        <Navbar />
+      <Navbar />
+      <div className="mx-16">
         <Header />
+        <Recipes />
         <Footer />
+      </div>
     </>
   );
 }

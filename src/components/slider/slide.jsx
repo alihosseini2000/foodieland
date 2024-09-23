@@ -7,7 +7,7 @@ import { GoPlay } from "react-icons/go";
 function Slide() {
   return (
     <div className="flex relative rounded-[40px]">
-      <div className="bg-sky-color w-2/4 p-10 rounded-l-[40px]">
+      <div className="bg-sky-color w-2/4 font-george p-10 rounded-l-[40px]">
         <div className="flex flex-col h-full justify-between">
           <div>
             <div className="flex gap-2 bg-white w-fit p-3 rounded-3xl">

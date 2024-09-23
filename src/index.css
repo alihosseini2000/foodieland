@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
@@ -11,13 +11,13 @@
   font-family: "George";
   src: url("../public/assets/Louis\ George\ Cafe.ttf");
 }
-.font-george{
+.font-george {
   font-family: George;
 }
-body{
+body {
   overflow-x: hidden;
 }
-.slider-container {
+.slider-sg-replace-icons {
   width: 100%; /* کل عرض صفحه */
   margin: 0 auto; /* قرار گرفتن اسلایدر در مرکز */
 }
@@ -35,14 +35,104 @@ body{
   transform: scale(1.05); /* بزرگتر کردن اسلاید مرکزی */
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   z-index: 1; /* دکمه‌های ناوبری در بالای اسلایدر قرار گیرند */
-} 
+}
 
-
-.m-0{
+.m-0 {
   margin: 0px !important;
 }
-.w-full{
+.w-full {
   width: 100% !important;
+}
+
+/* .sg-replace-icons {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 38px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
+
+/* Hide the browser's default checkbox */
+/* .sg-replace-icons input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+} */
+
+/* Create a custom checkbox */
+/* .checkmark {
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+} */
+
+/* On mouse-over, add a grey background color */
+/* .sg-replace-icons:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* .sg-replace-icons input:checked ~ .checkmark {
+  background-color: #2196f3;
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+/* .checkmark:after {
+  content: "\2665";
+  color: #f06586;
+  position: absolute;
+  left: 6px;
+  display: none;
+} */
+
+/* Show the checkmark when checked */
+/* .sg-replace-icons input:checked ~ .checkmark:after {
+  display: block;
+} */
+
+/* Style the checkmark/indicator */
+/* .sg-replace-icons .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */
+
+
+#button {
+  display: none;
+}
+.fas{
+  width: 50px !important;
+}
+
+#button + label::before {
+  background-color: rgb(236, 238, 238);
+  color: #d3d1d1;
+  border-radius: 50%;
+  font-size: 38px;
+  content: "\2665"; 
+}
+
+#button:checked + label::before {
+  content: "\2665"; 
+  color: #f06586;
 }
